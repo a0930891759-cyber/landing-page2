@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>梁 ❤ 敏</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: linear-gradient(120deg, #ffb3b3, #ffd6cc);
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    .container {
+      padding: 70px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    /* ===== 名字滚动 ===== */
+    .name-wrapper {
+      width: 100%;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .name {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 3.2rem;
+      animation: nameFloat 4s ease-in-out infinite;
+    }
+
+    @keyframes nameFloat {
+      0% { transform: translateX(-50px); }
+      50% { transform: translateX(50px); }
+      100% { transform: translateX(-50px); }
+    }
+
+    .heart-center {
+      color: #ff3b6b;
+      font-size: 2.5rem;
+      animation: heartbeat 1.4s infinite;
+    }
+
+    @keyframes heartbeat {
+      0%,100% { transform: scale(1); }
+      25%,75% { transform: scale(1.25); }
+    }
+
+    h2 {
+      font-weight: 300;
+      margin-bottom: 35px;
+    }
+
+    /* ===== 主文案 ===== */
+    .love-text {
+      font-size: 1.2rem;
+      line-height: 1.9;
+      background: rgba(255, 255, 255, 0.22);
+      padding: 32px;
+      border-radius: 22px;
+      margin-bottom: 50px;
+    }
+
+    /* ===== 情话卡片 ===== */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-bottom: 60px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.25);
+      border-radius: 20px;
+      padding: 26px 20px;
+      line-height: 1.7;
+      font-size: 1.05rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 18px 45px rgba(0,0,0,0.35);
+    }
+
+    .card span {
+      display: block;
+      margin-top: 10px;
+      font-size: 0.9rem;
+      opacity: 0.85;
+    }
+
+    /* ===== 图片 ===== */
+    .images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-bottom: 50px;
+    }
+
+    .images img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+      transition: transform 0.4s ease;
+    }
+
+    .images img:hover {
+      transform: scale(1.06);
+    }
+
+    .footer {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    /* ===== 飘心 ===== */
+    .heart {
+      position: fixed;
+      bottom: -20px;
+      color: #ff3b6b;
+      font-size: 18px;
+      animation: floatUp linear infinite;
+      opacity: 0.85;
+    }
+
+    @keyframes floatUp {
+      from { transform: translateY(0) scale(1); opacity: 1; }
+      to { transform: translateY(-120vh) scale(1.6); opacity: 0; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+<div class="container">
+
+  <!-- 💖 名字 -->
+  <div class="name-wrapper">
+    <h1 class="name">
+      <span>梁</span>
+      <span class="heart-center">❤</span>
+      <span>敏</span>
+    </h1>
+  </div>
+
+  <h2>遇见你，是我所有浪漫的开始</h2>
+
+  <!-- 💌 主表白 -->
+  <div class="love-text">
+    <p>梁敏：</p>
+    <p>
+      我想认真告诉你，<br>
+      你不是我权衡利弊后的选择，<br>
+      而是我怦然心动后的坚定。
+    </p>
+    <p>
+      未来或许平凡，<br>
+      但只要是你，<br>
+      我都愿意慢慢走。
+    </p>
+    <p><strong>我喜欢你，梁敏。</strong></p>
+  </div>
+
+  <!-- 💖 情话卡片 -->
+  <div class="cards">
+    <div class="card">
+      如果世界只剩一个人值得我温柔，<br>
+      那一定是你。
+      <span>—— 因为你刚刚好</span>
+    </div>
+
+    <div class="card">
+      我不太会表达爱，<br>
+      但我的所有偏爱，<br>
+      都毫无保留地给了你。
+      <span>—— 只给你</span>
+    </div>
+
+    <div class="card">
+      想和你做的事很简单，<br>
+      吃饭、散步、聊天、看日落，<br>
+      直到很多很多年以后。
+      <span>—— 一直在一起</span>
+    </div>
+
+    <div class="card">
+      有些人一出现，<br>
+      世界就亮了。<br>
+      你就是这样的人。
+      <span>—— 梁敏</span>
+    </div>
+  </div>
+
+  <!-- 🌹 图片 -->
+  <div class="images">
+    <img src="https://picsum.photos/600/420?random=201">
+    <img src="https://picsum.photos/600/420?random=202">
+    <img src="https://picsum.photos/600/420?random=203">
+  </div>
+
+  <div class="footer">
+    ❤️ 为你心动 · 不止今天 ❤️
+  </div>
+
+</div>
+
+<script>
+  function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerText = "❤";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = Math.random() * 20 + 14 + "px";
+    heart.style.animationDuration = Math.random() * 3 + 4 + "s";
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 7000);
+  }
+  setInterval(createHeart, 500);
+</script>
+</body>
+</html>
